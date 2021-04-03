@@ -1,0 +1,36 @@
+.Header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px;
+  position: relative;
+}
+.logo {
+  font-size: 5rem;
+  font-weight: 500; 
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -10px;
+}
+.title-container h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.doctor {
+  color: var(--secondary-color);
+}
+.burger-menu {
+  position: absolute;
+  right: 25px;
+  height: 37px;
+}
+.burger-button {
+  line-height: 8px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
