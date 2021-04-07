@@ -1,4 +1,5 @@
 import '../assets/styles/components/Header.css'
+import Dropdown from 'react-bootstrap/Dropdown'
 
 const Header = () => {
   return(
@@ -13,32 +14,23 @@ const Header = () => {
         <h2>Daru</h2>
         <h2 className="doctor">doctor</h2>
       </div>
-      <div className="dropdown">
-        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown
-        </button>
-        <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <li><button className="dropdown-item" type="button">Action</button></li>
-          <li><button className="dropdown-item" type="button">Another action</button></li>
-          <li><button className="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-      </div>
-      {/* <div class="dropdown burger-menu">
-        <button class="burger-button btn btn-dark" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+      <Dropdown className="burger-menu">
+        <Dropdown.Toggle className="burger-button" variant="Secondary" id="dropdown-basic">
           ____<br/>
-          ____<br/>
+          ___<br/>
           ____
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <li><button class="dropdown-item" type="button">Action</button></li>
-          <li><button class="dropdown-item" type="button">Another action</button></li>
-          <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-      </div> */}
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="#/action-1">Apps</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">About</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Portfolio</Dropdown.Item>
+          <Dropdown.Item href="#/action-4">Contact</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
       <div className="navbar">
         
       </div>
-
     </div>
   )
 }
