@@ -4,9 +4,6 @@ import Dropdown from 'react-bootstrap/Dropdown'
 const Header = () => {
   return(
     <div className="Header">
-      {/* <figure className="icon-container">
-        <img src="" alt=""/>
-      </figure> */}
       <div>
         <h1 className="logo">DD</h1>
       </div>
@@ -29,7 +26,7 @@ const Header = () => {
         </Dropdown.Menu>
       </Dropdown>
       <div className="navbar">
-        
+
       </div>
     </div>
   )

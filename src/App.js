@@ -7,6 +7,7 @@ import {
 
 import Layout from './components/Layout'
 import About from './components/About'
+import NeonatalFluidCalculator from './containers/NeonatalFluidCalculator';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Layout>
         <Switch>
           <Route path="/about" component={About} />
+          <Route path="/liquidos-neonatos" component={NeonatalFluidCalculator} />
         </Switch>
       </Layout>
   </Router>
