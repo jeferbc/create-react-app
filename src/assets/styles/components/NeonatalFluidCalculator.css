@@ -1,0 +1,50 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+.inputs {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hipoglicemia-input {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  width: 250px;
+  font-size: 1.6rem;
+}
+
+.hipoglicemia-input input {
+  width: 4rem;
+  height: 4rem;
+  margin: 10px;
+}
+
+.hipoglicemia-input label {
+  text-align: center;
+}
+
+.resultados-container {
+  padding: 20px;
+  font-size: 2rem;
+  background-color: var(--just-white);
+  color: var(--darkest-black);
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+

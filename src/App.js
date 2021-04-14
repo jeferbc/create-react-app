@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import Layout from './components/Layout'
-import About from './components/About'
+import About from './containers/About'
 import NeonatalFluidCalculator from './containers/NeonatalFluidCalculator';
 
 function App() {

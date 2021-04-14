@@ -1,0 +1,14 @@
+.app-title-container {
+  width: 100vw;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(8, 152, 180, 0.699);
+}
+.app-title, .app-subtitle {
+  width: 80vw;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--just-white);
+}

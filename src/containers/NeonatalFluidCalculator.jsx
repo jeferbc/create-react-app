@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import appInit from '../assets/functions/appInit';
-
+import AppTitle from '../components/AppTitle'
+import '../assets/styles/components/NeonatalFluidCalculator.css'
 // import { 
   // appInit,
   // dextrosaSeleccionadaEnCc,
@@ -101,13 +102,14 @@ const NeonatalFluidCalculator = () => {
 
   return (
     <div className="app-container">
+      <AppTitle title="Liquidos en neonatos" subtitle="LOS PRIMEROS 5 DIAS DE VIDA" />
       <div className="form-container">
       <form action="" method="">
-        <ul class="form">
+        <ul className="form">
           <li>
-            <label for="peso">Peso del paciente (kg)</label> <br/>
-            <input 
-              class="inputs" 
+            <label htmlFor="peso">Peso del paciente (kg)</label> <br/>
+            <input
+              className="inputs" 
               type="text" 
               id="peso" 
               name="user_peso"
@@ -115,27 +117,27 @@ const NeonatalFluidCalculator = () => {
             />
           </li>        
           <li>
-            <label for="dias">Dias de vida</label> <br/>
+            <label htmlFor="dias">Dias de vida</label> <br/>
             <input 
-              class="inputs" 
+              className="inputs" 
               type="text" 
               id="dias" 
               name="user_dias" 
               onChange={handleChange}
             />
           </li>        
-          <li  class="hipoglicemia-input">          
+          <li  className="hipoglicemia-input">          
             <input 
               type="checkbox" 
               id="dias" 
               name="hipoglicemia" 
               onChange={handleChange}
             />
-            <label for="hipoglicemia">Tiene una hipoglicemia que requiere flujo metabolico de 9</label> <br/>
+            <label htmlFor="hipoglicemia">Tiene una hipoglicemia que requiere flujo metabolico de 9</label> <br/>
           </li>        
-          <li class="button-container">
+          <li className="button-container">
             <button 
-              class="calc-button" 
+              className="calc-button" 
               type="button" 
               id="botonCalcular"
               onClick={handleClick}
@@ -146,9 +148,9 @@ const NeonatalFluidCalculator = () => {
       </div>
       {show ? 
       <>
-        <div class="resultados-container">
+        <div className="resultados-container">
           <h4>FORMULA</h4>
-          <ul class="resultados-list">
+          <ul className="resultados-list">
             <li>
               <label id="liquidosNecesarios">-Administrar ${dextrosaSeleccionadaEnCc} CC de ${dextrosaSeleccionada}<br/> y agregar ${ccDiference} CC de agua destilada. <br/>En 24 horas.</label>
             </li>      
@@ -163,12 +165,12 @@ const NeonatalFluidCalculator = () => {
             </li>        
           </ul>
         </div>
-        <div class="title-container">
+        <div className="title-container">
           <h3>En caso de querer hacer los calculos manualmente estas son las cantidades de dextrosa en CC que se necesitan segun su concentracion</h3>
         </div>
-        <div class="otras-dextrosas-container">
+        <div className="otras-dextrosas-container">
           <h4>Otras dextrosas</h4>
-          <ul class="resultados-list">
+          <ul className="resultados-list">
             <li>
               <label id="resultado5">-Dextrosa al 5 en cc :---${cantidadDextrosaAl5Porciento} CC</label>
             </li>        
@@ -184,7 +186,7 @@ const NeonatalFluidCalculator = () => {
           </ul>      
         </div>
       </>
-      : <h1>Show false</h1> }
+      : <h1 className="show-false">Show false</h1> }
     </div>
   )
 }
