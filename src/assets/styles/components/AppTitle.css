@@ -9,6 +9,11 @@
 .app-title, .app-subtitle {
   width: 80vw;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 100;
   color: var(--just-white);
+}
+
+.app-title {
+  font-weight: bold;
 }

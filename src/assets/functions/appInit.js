@@ -91,7 +91,7 @@ const appInit = (peso, diasDeNacido, hipoglicemiaChecked) => {
           meqNatrol = peso * 3
           natrolEnCc = (meqNatrol * 10) / 20
           katrolEnCC = natrolEnCc / 2
-          electrolitosMostrados = `-Agregar ${natrolEnCc} CC de Natrol <br> y ${katrolEnCC} CC de Katrol`
+          electrolitosMostrados = `-Agregar ${natrolEnCc} CC de Natrol y ${katrolEnCC} CC de Katrol`
         } else if(parseFloat(diasDeNacido) >= 2){
           meqNatrol = peso * 3
           natrolEnCc = (meqNatrol * 10) / 20

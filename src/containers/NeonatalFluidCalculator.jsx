@@ -33,10 +33,16 @@ import '../assets/styles/components/NeonatalFluidCalculator.css'
 const NeonatalFluidCalculator = () => {
   
   const [patient, setPatient] = useState({
-    user_peso: "5",
-    user_dias: "5"
+    user_peso: "0",
+    user_dias: "0"
   })
   const [show, setShow] = useState(false)
+  const [hipoglicemiaCheck, setHipoglicemiaCheck] = useState(false)
+
+  const toggleCheck = () => {
+    setHipoglicemiaCheck(!hipoglicemiaCheck)
+    setShow(false)
+  }
 
   const handleChange = event => {
     
@@ -50,7 +56,7 @@ const NeonatalFluidCalculator = () => {
     const peso = parseInt(pesoString)
     const diasString = patient.user_dias
     const dias = parseInt(diasString)
-    const appResults = appInit(peso, dias, false)
+    const appResults = appInit(peso, dias, hipoglicemiaCheck)
     // dextrosaSeleccionadaEnCc = appResults.dextrosaSeleccionadaEnCc.toFixed(1)
     // console.log(dextrosaSeleccionadaEnCc)
     // dextrosaSeleccionada = appResults.dextrosaSeleccionada
@@ -63,7 +69,6 @@ const NeonatalFluidCalculator = () => {
     // cantidadDextrosaAl30Porciento = appResults.cantidadDextrosaAl30Porciento.toFixed(1)
     // cantidadDextrosaAl50Porciento = appResults.cantidadDextrosaAl50Porciento.toFixed(1)
     dextrosaSeleccionadaEnCc = appResults.dextrosaSeleccionadaEnCc
-    console.log(dextrosaSeleccionadaEnCc)
     dextrosaSeleccionada = appResults.dextrosaSeleccionada
     ccDiference = appResults.ccDiference
     electrolitosMostrados = appResults.electrolitosMostrados
@@ -81,7 +86,7 @@ const NeonatalFluidCalculator = () => {
     const peso = parseInt(pesoString)
     const diasString = patient.user_dias
     const dias = parseInt(diasString)
-    const appResults = appInit(peso, dias, false)
+    const appResults = appInit(peso, dias, hipoglicemiaCheck)
     // SETEO DE VARIABLES
     dextrosaSeleccionadaEnCc = appResults.dextrosaSeleccionadaEnCc
     dextrosaSeleccionada = appResults.dextrosaSeleccionada
@@ -94,11 +99,13 @@ const NeonatalFluidCalculator = () => {
     cantidadDextrosaAl30Porciento = appResults.cantidadDextrosaAl30Porciento
     cantidadDextrosaAl50Porciento = appResults.cantidadDextrosaAl50Porciento
 
-    setShow(true)
+    if(peso && dias) {
+      setShow(true)
+    }
   }
 
 
-  console.log(show)
+  // console.log(show)
 
   return (
     <div className="app-container">
@@ -131,13 +138,14 @@ const NeonatalFluidCalculator = () => {
               type="checkbox" 
               id="dias" 
               name="hipoglicemia" 
-              onChange={handleChange}
+              onChange={toggleCheck}
+              // onChange={handleChange}
             />
             <label htmlFor="hipoglicemia">Tiene una hipoglicemia que requiere flujo metabolico de 9</label> <br/>
           </li>        
           <li className="button-container">
             <button 
-              className="calc-button" 
+              className="success-button" 
               type="button" 
               id="botonCalcular"
               onClick={handleClick}
@@ -149,44 +157,44 @@ const NeonatalFluidCalculator = () => {
       {show ? 
       <>
         <div className="resultados-container">
-          <h4>FORMULA</h4>
+          <h4 className="resultados-title">FORMULA</h4>
           <ul className="resultados-list">
             <li>
-              <label id="liquidosNecesarios">-Administrar ${dextrosaSeleccionadaEnCc} CC de ${dextrosaSeleccionada}<br/> y agregar ${ccDiference} CC de agua destilada. <br/>En 24 horas.</label>
+              <label id="liquidosNecesarios">-Administrar {dextrosaSeleccionadaEnCc.toFixed(1)} CC de {dextrosaSeleccionada}<br/> y agregar {ccDiference.toFixed(1)} CC de agua destilada. <br/>En 24 horas.</label>
             </li>      
             <li>
-              <label id="electrolitos">${electrolitosMostrados}</label>
+              <label id="electrolitos">{electrolitosMostrados}</label>
             </li>
             <li>
-              <label id="concentracion">(La solución tendrá una concentración de ${porcentajeDeDextrosa}% dextrosa)</label>
+              <label id="concentracion">(La solución tendrá una concentración de {porcentajeDeDextrosa.toFixed(1)}% dextrosa)</label>
             </li>      
             <li>
-              <label id="cateterCentral">${usoCateter}</label>
+              <label id="cateterCentral">{usoCateter}</label>
             </li>        
           </ul>
         </div>
-        <div className="title-container">
+        <div className="text-container">
           <h3>En caso de querer hacer los calculos manualmente estas son las cantidades de dextrosa en CC que se necesitan segun su concentracion</h3>
         </div>
         <div className="otras-dextrosas-container">
-          <h4>Otras dextrosas</h4>
+          <h4 className="resultados-title">Otras dextrosas</h4>
           <ul className="resultados-list">
             <li>
-              <label id="resultado5">-Dextrosa al 5 en cc :---${cantidadDextrosaAl5Porciento} CC</label>
+              <label id="resultado5">-Dextrosa al 5 en cc :---{cantidadDextrosaAl5Porciento.toFixed(1)} CC</label>
             </li>        
             <li>
-              <label id="resultado10">-Dextrosa al 10 en cc :---${cantidadDextrosaAl10Porciento} CC</label>
+              <label id="resultado10">-Dextrosa al 10 en cc :---{cantidadDextrosaAl10Porciento.toFixed(1)} CC</label>
             </li>
             <li>
-              <label id="resultado30">-Dextrosa al 30 en cc :---${cantidadDextrosaAl30Porciento} CC</label>
+              <label id="resultado30">-Dextrosa al 30 en cc :---{cantidadDextrosaAl30Porciento.toFixed(1)} CC</label>
             </li>
             <li>
-              <label id="resultado50">-Dextrosa al 50 en cc :---${cantidadDextrosaAl50Porciento} CC</label>
+              <label id="resultado50">-Dextrosa al 50 en cc :---{cantidadDextrosaAl50Porciento.toFixed(1)} CC</label>
             </li>      
           </ul>      
         </div>
       </>
-      : <h1 className="show-false">Show false</h1> }
+      : ""}
     </div>
   )
 }
