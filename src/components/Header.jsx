@@ -1,5 +1,6 @@
 import '../assets/styles/components/Header.css'
 import Dropdown from 'react-bootstrap/Dropdown'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return(
@@ -19,10 +20,10 @@ const Header = () => {
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1">Apps</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">About</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Portfolio</Dropdown.Item>
-          <Dropdown.Item href="#/action-4">Contact</Dropdown.Item>
+          <Dropdown.Item><Link to="/liquidos-neonatos">App</Link></Dropdown.Item>
+          <Dropdown.Item><Link to="/about">About</Link></Dropdown.Item>
+          <Dropdown.Item><Link to="/portfolio">Portfolio</Link></Dropdown.Item>
+          <Dropdown.Item><Link to="/contact">Contact</Link></Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       <div className="navbar">

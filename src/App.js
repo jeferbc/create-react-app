@@ -14,8 +14,9 @@ function App() {
     <Router>
       <Layout>
         <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/liquidos-neonatos" component={NeonatalFluidCalculator} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/liquidos-neonatos" component={NeonatalFluidCalculator} />
+          <Route exact component={NeonatalFluidCalculator} />
         </Switch>
       </Layout>
   </Router>
