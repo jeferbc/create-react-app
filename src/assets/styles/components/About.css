@@ -1,0 +1,48 @@
+.about-container {
+  padding: 20px;
+}
+
+.title-about {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.p-about {
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+.p-about-short {
+  margin-right: 65px;
+}
+
+.mpi-cover {
+  z-index: -1;
+  width: 250px;
+  height: 155px;
+  position: absolute;
+  right: 0;
+  /* background-color: var(--primary-color); */
+  background-color: rgb(198 199 199 / 24%);
+  border-radius: 50%;
+}
+
+.mpi-container {
+  position: absolute;
+  z-index: -2;
+  right: 0px;
+  bottom: -30px;
+  display: flex;
+  
+  width: 320px;
+  height: 203px;
+  background-color: var(--primary-color);
+}
+.medicine-profile-image {
+  position: absolute;
+  right: 0;
+  width: 160px;
+  bottom: -18px;
+  /* bottom: -10px; */
+}
+
