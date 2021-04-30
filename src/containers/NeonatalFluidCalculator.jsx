@@ -139,7 +139,6 @@ const NeonatalFluidCalculator = () => {
               id="dias" 
               name="hipoglicemia" 
               onChange={toggleCheck}
-              // onChange={handleChange}
             />
             <label htmlFor="hipoglicemia">Tiene una hipoglicemia que requiere flujo metabolico de 9</label> <br/>
           </li>        
