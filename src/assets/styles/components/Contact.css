@@ -1,0 +1,26 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-title {
+  margin-top: 30px;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.networks-container {
+  width: 100vw;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, 200px);
+}
+
+.network-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(58, 64, 67);
+}
