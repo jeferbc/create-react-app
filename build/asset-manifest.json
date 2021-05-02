@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/darudoctor/static/css/main.a3fbce8c.chunk.css",
+    "main.js": "/darudoctor/static/js/main.fb2e70ba.chunk.js",
+    "main.js.map": "/darudoctor/static/js/main.fb2e70ba.chunk.js.map",
+    "runtime-main.js": "/darudoctor/static/js/runtime-main.bdfe5ee7.js",
+    "runtime-main.js.map": "/darudoctor/static/js/runtime-main.bdfe5ee7.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/darudoctor/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.e2d20b0a.chunk.js": "/darudoctor/static/js/2.e2d20b0a.chunk.js",
+    "static/js/2.e2d20b0a.chunk.js.map": "/darudoctor/static/js/2.e2d20b0a.chunk.js.map",
+    "static/js/3.f8ada4e7.chunk.js": "/darudoctor/static/js/3.f8ada4e7.chunk.js",
+    "static/js/3.f8ada4e7.chunk.js.map": "/darudoctor/static/js/3.f8ada4e7.chunk.js.map",
+    "index.html": "/darudoctor/index.html",
+    "static/css/2.ef9168ec.chunk.css.map": "/darudoctor/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.a3fbce8c.chunk.css.map": "/darudoctor/static/css/main.a3fbce8c.chunk.css.map",
+    "static/js/2.e2d20b0a.chunk.js.LICENSE.txt": "/darudoctor/static/js/2.e2d20b0a.chunk.js.LICENSE.txt",
+    "static/media/MedicineProfile.d657e9fd.png": "/darudoctor/static/media/MedicineProfile.d657e9fd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdfe5ee7.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.e2d20b0a.chunk.js",
+    "static/css/main.a3fbce8c.chunk.css",
+    "static/js/main.fb2e70ba.chunk.js"
+  ]
+}
