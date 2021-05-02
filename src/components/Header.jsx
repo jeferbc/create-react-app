@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return(
     <div className="Header">
-      <div>
+      <Link to="/liquidos-neonatos" className="logo-container">
         <h1 className="logo">DD</h1>
-      </div>
-      <div className="title-container">
+      </Link>
+      <Link to="/liquidos-neonatos" className="title-container">
         <h2>Daru</h2>
         <h2 className="doctor">doctor</h2>
-      </div>
+      </Link>
       <Dropdown className="burger-menu">
         <Dropdown.Toggle className="burger-button" variant="Secondary" id="dropdown-basic">
           ____<br/>

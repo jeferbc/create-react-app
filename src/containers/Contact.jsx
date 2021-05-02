@@ -20,7 +20,7 @@ const Contact = () => {
         <a className="network-icon" href="https://github.com/Darudaniel">
           {github}
         </a>
-        <a className="network-icon" href="https://twitter.com/home">
+        <a className="network-icon" href="https://twitter.com/Darubeat">
           {twitter}
         </a>
       </div>

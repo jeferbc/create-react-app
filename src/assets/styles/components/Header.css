@@ -7,6 +7,9 @@
   padding-bottom: 10px;
   position: relative;
 }
+.logo-container {
+  color: rgb(33,37,41);
+}
 .logo {
   font-size: 5rem;
   font-weight: 500; 
@@ -17,6 +20,7 @@
   align-items: center;
   position: relative;
   left: -10px;
+  color: rgb(33,37,41);
 }
 .title-container h2 {
   font-size: 2.4rem;
