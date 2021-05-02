@@ -9,18 +9,18 @@ const Contact = () => {
   const twitter = <FontAwesomeIcon icon={faTwitter} size="8x"/>
   return(
     <div className="contact-container">
-      <h2 className="contact-title">Contact</h2>    
+      <h2 className="contact-title">Don't be shy, contact me!</h2>    
       <div className="networks-container">  
-        <a className="network-icon" href="https://www.youtube.com">
+        <a className="network-icon" href="https://www.instagram.com/danielruizen/?igshid=146eqhcu1h6ok">
           {instagram}
         </a>
-        <a className="network-icon" href="https://www.youtube.com">
+        <a className="network-icon" href="https://www.linkedin.com/in/daniel-ruiz-9343521b8/">
           {linkedin}
         </a>
-        <a className="network-icon" href="https://www.youtube.com">
+        <a className="network-icon" href="https://github.com/Darudaniel">
           {github}
         </a>
-        <a className="network-icon" href="https://www.youtube.com">
+        <a className="network-icon" href="https://twitter.com/home">
           {twitter}
         </a>
       </div>

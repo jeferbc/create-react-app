@@ -1,8 +1,8 @@
 :root {
   --page-background: rgb(4, 12, 26);
   --primary-color: rgb(238, 255, 255);
-  --third-color: rgba(53,68,119,0.2);
   --secondary-color: rgb(17, 211, 201);
+  --third-color: rgba(53,68,119,0.2);
   --just-white: rgb(251, 251, 253);
   --input-background: rgb(219, 228, 230);
 }
@@ -20,6 +20,11 @@ html {
 body {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
 
 .success-button {
   padding: 10px 20px;
@@ -48,3 +53,4 @@ body {
   background-color: rgb(219, 228, 230);
   border: none;
 }
+

@@ -44,3 +44,30 @@
 .burger-button::after {
   display: none;
 }
+
+.item-menu-button {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 7rem;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: rgb(51, 49, 49);
+  justify-self: center;
+}
+
+.dropdown-menu {
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  box-shadow: 1px 1px 100px 50px var(--primary-color);
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: (var(--primary-color));
+}
+.dropdown-item:hover {
+  background-color: var(--primary-color);
+}

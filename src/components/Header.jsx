@@ -20,10 +20,10 @@ const Header = () => {
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
-          <Dropdown.Item><Link to="/liquidos-neonatos">App</Link></Dropdown.Item>
-          <Dropdown.Item><Link to="/about">About</Link></Dropdown.Item>
-          {/* <Dropdown.Item><Link to="/portfolio">Portfolio</Link></Dropdown.Item> */}
-          <Dropdown.Item><Link to="/contact">Contact</Link></Dropdown.Item>
+          <Dropdown.Item><Link to="/liquidos-neonatos" className="item-menu-button">App</Link></Dropdown.Item>
+          <Dropdown.Item><Link to="/about" className="item-menu-button">About</Link></Dropdown.Item>
+          {/* <Dropdown.Item><Link to="/portfolio" className="item-menu-button">Portfolio</Link></Dropdown.Item> */}
+          <Dropdown.Item><Link to="/contact" className="item-menu-button">Contact</Link></Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       <div className="navbar">

@@ -5,8 +5,8 @@
 }
 .contact-title {
   margin-top: 30px;
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 .networks-container {
@@ -20,6 +20,7 @@
 
 .network-icon {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: rgb(58, 64, 67);
